@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EndPvP</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+            color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ff4444;
+            margin: 30px 0 10px 0;
+            animation: pop 1s ease;
+        }
+
+        @keyframes pop {
+            0% { transform: scale(0); }
+            100% { transform: scale(1); }
+        }
+
+        p {
+            font-size: 1.2em;
+            max-width: 700px;
+            line-height: 1.5em;
+        }
+
+        .button {
+            margin: 10px;
+            padding: 12px 30px;
+            background: #ff4444;
+            color: #fff;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        }
+
+        .button:hover {
+            background: #ff2222;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+        }
+
+        .section {
+            margin-top: 25px;
+        }
+
+        .small {
+            font-size: 0.8em;
+            margin-top: 40px;
+            color: #888;
+        }
+
+        a.mail-link {
+            color: #44ff44;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a.mail-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Willkommen bei EndPvP!</h1>
+    <p>Dein Minecraft PvP-Hub. Hier findest du Infos, Serverstatus, Rangliste, Support und vieles mehr.</p>
+
+    <!-- Buttons -->
+    <div class="section">
+        <a href="https://discord.gg/xVrRwnfGg8" class="button">Discord Server</a>
+        <a class="button">Java Server: 5.175.214.3:25732</a>
+        <a href="http://mc.endpvp.pro" class="button">Rangliste</a>
+    </div>
+
+    <!-- Serverstatus & Builder -->
+    <div class="section">
+        <p>Serverstatus: <strong>Online ✅</strong></p>
+        <p>Builder: EnderFabs, Legoheld24, ???</p>
+    </div>
+
+    <!-- Support -->
+    <div class="section">
+        <p>Fragen oder Probleme? Kontaktier unseren Support: <a href="mailto:endpvp.pro@gmail.com" class="mail-link">endpvp.pro@gmail.com</a></p>
+    </div>
+
+    <!-- Footer -->
+    <div class="small">
+        <p>© 2026 EndPvP | Designed by EnderFabs & Team</p>
+    </div>
+</body>
+</html>
